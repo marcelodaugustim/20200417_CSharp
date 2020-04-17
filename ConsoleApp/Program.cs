@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Chame aqui um dos métodos para testá-lo.
+        //Chame aqui um dos métodos para testá-lo. 
 
     }
 
