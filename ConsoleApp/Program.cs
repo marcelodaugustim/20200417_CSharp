@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Exemplo1();
+        Exemplo1(); 
     }
 
     private static void Exemplo1()
