@@ -4,8 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        Exemplo8DoWhile();
+        //Chame aqui um dos métodos para testá-lo.
 
+    }
+
+    private static void Exemplo9Switch()
+    {
+        int opcao = Int32.Parse(Console.ReadLine());
+        switch (opcao)
+        {
+            case 1:
+                Console.WriteLine("Foi escolhida a opção 1.");
+                break;
+            case 2:
+                Console.WriteLine("Foi escolhida a opção 2.");
+                break;
+            default:
+                Console.WriteLine("Foi escolhida outra opção.");
+                break;
+        }
     }
 
     private static void Exemplo8DoWhile()
