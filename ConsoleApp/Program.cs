@@ -4,7 +4,36 @@ class Program
 {
     static void Main(string[] args)
     {
-        ExercicioReajusteSalario();
+        // Anos em que o F.C. Barcelona foi campeão europeu
+        int[] anosTitulosBarcelona = new int[5] { 1990, 2006, 2009, 2011, 2015 };
+        int[] anosTitulosRealMadrid = new int[] { };
+
+        // Tamanho do vetor:
+        int numeroTitulosBarcelona = anosTitulosBarcelona.Length;
+        int numeroTitulosRealMadrid = anosTitulosRealMadrid.Length; 
+        Console.WriteLine("O Barcelona possui "+ numeroTitulosBarcelona);
+        Console.WriteLine("O Real Madrid possui " + numeroTitulosRealMadrid);
+
+        for (int i = 0; i < numeroTitulosBarcelona; i++)
+        {
+            Console.WriteLine(anosTitulosBarcelona[i]);
+        }
+
+        // Editar valores do array:
+        anosTitulosBarcelona[0] = 1992;
+
+        /*
+        int[] v = new int[10] { 99, 85, 7, 0, -8, 9, 10, 5, 55, -50 };
+
+        
+        if (v[i] > v[i + 1])
+        {
+            int temp = v[i + 1];
+            v[i + 1] = v[i];
+            v[i] = temp;
+        }
+        */
+
     }
 
     private static void ExercicioReajusteSalario()
