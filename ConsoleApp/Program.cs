@@ -4,8 +4,48 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Chame aqui um dos métodos para testá-lo. 
+        ExercicioReajusteSalario();
+    }
 
+    private static void ExercicioReajusteSalario()
+    {
+        /*
+        * Crie um algoritmo que calcule e mostre o novo valor de um salário a partir das seguintes regras: 
+        * salários de até R$ 1.000,00 inclusive recebem 30% de aumento, 
+        * salários de até R$ 2.000,00 inclusive recebem 25%, 
+        * salários de até R$ 3.000,00 inclusive recebem 20%, 
+        * salários de até R$ 4.000,00 inclusive recebem 15% e 
+        * salários acima de R$ 4.000,00 recebem 10%. 
+        */
+
+        //Entrada: valor do salário.
+        Console.Write("Informe o valor do salário: R$");
+        decimal salario = Decimal.Parse(Console.ReadLine());
+        decimal salarioAjustado = 0.0m;
+
+        //Estrutura condicional:
+        if (salario <= 1000)
+        {
+            salarioAjustado = salario * 1.3m;
+        }
+        else if (salario <= 2000)
+        {
+            salarioAjustado = salario * 1.25m;
+        }
+        else if (salario <= 3000)
+        {
+            salarioAjustado = salario * 1.2m;
+        }
+        else if (salario <= 4000)
+        {
+            salarioAjustado = salario * 1.15m;
+        }
+        else
+        {
+            salarioAjustado = salario * 1.1m;
+        }
+        //Saída: valor ajustado do salário.
+        Console.WriteLine("O novo salário será de {0:0,0.00}", salarioAjustado);
     }
 
     private static void Exemplo9Switch()
